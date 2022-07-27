@@ -27,15 +27,15 @@ module.exports = {
     networks: {
         hardhat: {
             chainId: 31337,
-            // gasPrice: 130000000000,
+            gasPrice: 130000000000,
         },
-        // kovan: {
-        //     url: KOVAN_RPC_URL,
-        //     accounts: [PRIVATE_KEY],
-        //     chainId: 42,
-        //     blockConfirmations: 6,
-        //     gas: 6000000,
-        // },
+        kovan: {
+            url: KOVAN_RPC_URL,
+            accounts: [PRIVATE_KEY],
+            chainId: 42,
+            blockConfirmations: 6,
+            gas: 6000000,
+        },
         rinkeby: {
             url: RINKEBY_RPC_URL,
             accounts: [PRIVATE_KEY],
@@ -61,7 +61,7 @@ module.exports = {
         currency: "USD",
         outputFile: "gas-report.txt",
         noColors: true,
-        // coinmarketcap: COINMARKETCAP_API_KEY,
+        coinmarketcap: COINMARKETCAP_API_KEY,
         token: "ETH",
     },
     namedAccounts: {
